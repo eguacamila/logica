@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calcularImc(peso, altura) {
+        //var imc1 = peso1 / (altura1 * altura1);
+        //var imc2 = peso2 / (altura2 * altura2);
+        //mostra("O imc calculado é " + imc.toFixed(2));
+        return peso / (altura * altura);
+        
+        //mostra("A soma dos imc's é " + (imc1 + imc2).toFixed(2));
+    }
+
+    var nome  = prompt("Informe o seu nome: ");
+    var alturaInformada = prompt(nome + "\nInforme sua altura: "); 
+    var pesoInformado = prompt(nome + "\nInforme o seu peso: ");
+    
+
+    var imc = calcularImc(pesoInformado, alturaInformada);
+    mostra(nome + ", o seu imc calculado é " + imc.toFixed(2));
+
+    if (imc < 18.5) {
+        mostra("Seu IMC está baixo.");
+    } else if (imc >= 18.5 && imc < 35) {
+        mostra("Seu IMC está excelente!");
+    } else if (imc >= 35) {
+        mostra("Você está acima do recomendado.");
+    } else {
+        mostra("Número inválido.");
+    }
+
+    //var imcFlavio = calcularImc(73, 1.71);
+    //var imcAmigo = calcularImc(68, 1.72);
+
+    //mostra("A SOMA DOS IMC'S É " + (imcFlavio + imcAmigo).toFixed(2));
+
+
+    //calcularImc(73, 1.71, 68, 1.72);
+
+    //var pesoFlavio = 73;
+    //var alturaFlavio =  1.71;
+    //calcularImc(pesoFlavio, alturaFlavio);
+    
+
+    //var pesoAmigo = 68;
+    //var alturaAmigo = 1.72;
+    //calcularImc(pesoAmigo, alturaAmigo);
+
+    
+</script>
