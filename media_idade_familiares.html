@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var idadePedro = 28;
+    var idadeMarta = 32;
+    var idadeJorge = 60;
+    var idadeBete = 22;
+
+    var totalIdades = (idadeBete + idadeJorge + idadeMarta + idadePedro);
+    var mediaIdades = totalIdades / 4
+
+    mostra(mediaIdades);
+
+
+</script>
