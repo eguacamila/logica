@@ -12,14 +12,23 @@ function pulaLinha() {
     }
 
     var numeroPensado = Math.round(Math.random() * 10)
-    var chute = parseInt(prompt("Digite seu chute"));
 
-    if (chute == numeroPensado) {
-        mostra("Você acertou!");
-    } else if (chute != numeroPensado) {
-        mostra("Você errou, o número pensado foi " + numeroPensado);
-    } else {
-        mostra("Número inválido.")
+    var tentativa = 1;
+
+    while (tentativa <= 3) {
+        var chute = parseInt(prompt("Digite seu chute"));
+
+        if (chute == numeroPensado) {
+            mostra("Você ACERTOU! O número pesnado era : " + numeroPensado);
+            break;
+            } else if (chute != numeroPensado) {
+            mostra("Você errou!");
+            } else {
+            mostra("Número inválido.")
+        }
+
+        tentativa++
     }
 
+    mostra("FIM")
 </script>
