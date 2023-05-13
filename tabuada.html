@@ -10,9 +10,14 @@ function pulaLinha() {
         document.write(texto);
         pulaLinha();
     }
+var numero = prompt("Numero da tabuada: ");
 
-var multiplicador = 1;
-mostra(7 * multiplicador);
+for (let multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    var tabuada = numero * multiplicador
+    mostra(multiplicador + " x  " + numero + " = " + tabuada);
+}
+
+mostra("FIM");
 
 
 
