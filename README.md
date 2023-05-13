@@ -1,2 +1,2 @@
 # logica
-Exercícios de lógica em JavaScript e HTML.
+Exercícios de lógica em JavaScript e HTML do curso alura.
